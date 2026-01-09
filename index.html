@@ -4,18 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meerab Fatima - Portfolio</title>
+
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+
   <!-- Navigation Bar -->
   <nav>
     <div class="container">
       <div class="logo">Meerab Fatima</div>
-      <div class="menu-icon" id="menu-icon">
+
+      <!-- CSS menu toggle -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
         <i class="fas fa-bars"></i>
-      </div>
-      <ul class="nav-links" id="nav-links">
+      </label>
+
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#academics">Academics</a></li>
@@ -37,34 +45,33 @@
     </div>
   </section>
 
- <!-- About Section -->
-<section id="about" class="about-section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm Meerab Fatima, an aspiring computer scientist from Jhang, Punjab, Pakistan.
-      I am passionate about technology and innovation, and I aim to contribute to the field
-      of computing by developing innovative solutions.
-      Currently, I am a BS Computer Science student at the Institute of Space Technology (IST), Islamabad.
-    </p>
-    <div class="details">
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Meerab Fatima, an aspiring computer scientist from Jhang, Punjab, Pakistan.
+        I am passionate about technology and innovation, and I aim to contribute to the field
+        of computing by developing innovative solutions.
+        Currently, I am a BS Computer Science student at the Institute of Space Technology (IST), Islamabad.
+      </p>
       <p><strong>Email:</strong> meerrabfatima72@gmail.com</p>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Academics Section -->
   <section id="academics" class="academics-section">
     <div class="container">
       <h2>Academic Details</h2>
+
       <div class="academic-item">
-        <h3>Intermediate (2022-2024)</h3>
+        <h3>Intermediate (2022–2024)</h3>
         <p><strong>Marks:</strong> 1089/1200 (91%)</p>
         <p><strong>Institute:</strong> Chenab College Jhang</p>
       </div>
+
       <div class="academic-item">
-        <h3>Matriculation (2020-2022)</h3>
+        <h3>Matriculation (2020–2022)</h3>
         <p><strong>Marks:</strong> 1061/1100 (96.45%)</p>
         <p><strong>Institute:</strong> Chenab College Jhang</p>
       </div>
@@ -75,15 +82,17 @@
   <section id="skills" class="skills-section">
     <div class="container">
       <h2>Skills</h2>
+
       <div class="skills-container">
         <div class="skill-item">
           <h3>Technical Skills</h3>
           <ul>
             <li>Graphic Designing</li>
             <li>Web Programming (HTML, CSS)</li>
-            <li>Coding Languages (C, C#, C++)</li>
+            <li>C, C#, C++</li>
           </ul>
         </div>
+
         <div class="skill-item">
           <h3>Soft Skills</h3>
           <ul>
@@ -102,7 +111,10 @@
   <section id="goals" class="goals-section">
     <div class="container">
       <h2>Goals and Passion</h2>
-      <p>My goal is to secure admission in a top-ranking IT university in Pakistan and pursue a degree in computer science. I aim to specialize in software development and artificial intelligence, contributing to innovative projects that make a positive impact on society. I am also passionate about graphic design and aspire to combine my technical and creative skills to build user-friendly applications.</p>
+      <p>
+        My goal is to secure admission in a top-ranking IT university in Pakistan and pursue
+        computer science, with a focus on software development and artificial intelligence.
+      </p>
     </div>
   </section>
 
@@ -110,11 +122,16 @@
   <section id="contact" class="contact-section">
     <div class="container">
       <h2>Contact Me</h2>
-      <form action="#" method="post">
+
+      <form action="mailto:meerrabfatima72@gmail.com"
+            method="post"
+            enctype="text/plain">
+
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <input type="text" name="subject" placeholder="Subject" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
+
         <button type="submit">Send Message</button>
       </form>
     </div>
@@ -127,9 +144,5 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
-
 </html>
-
-
